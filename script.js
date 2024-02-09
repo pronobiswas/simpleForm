@@ -21,6 +21,8 @@ let idate = document.querySelector("#idate");
 let clr = document.querySelector("#clr");
 let getReset = document.querySelector("#getReset");
 let iDone = document.querySelector("#iDone");
+
+
 // ===========HTML ELEMNT========
 // ===========HTML ELEMNT========
 
@@ -31,47 +33,66 @@ let iDone = document.querySelector("#iDone");
 // ============html element value=========
 iDone.addEventListener("click" , function(){
 
-    console.log(nam.value);
-    console.log(phone.value);
-    console.log(website.value);
-    console.log(mails.value);
-    console.log(pass.value);
+    // ============*********form validation*******=======
+    // let namValue = nam.value;
+    // if( namValue = " "){
+    //     nam.value= "Set Your Name"
+    //     nam.style.color = "red"
+    // }else{
+    //     console.log(namValue)
+    // }
+    // ===phone validation=====
+    // if(phone.value = " " || pnone.value != isNaN(phone.value)){
+    // phone.value = "00000"
+    // phone.style.color = "red"
+    // }
+    // ============*********form validation*******=======
+
+    // console.log( nam.value);
+    // console.log(phone.value);
+    // console.log(website.value);
+    // console.log(mails.value);
+    // console.log(pass.value);
 
     // *******======radio value=======*******
-    let radioOption = document.querySelectorAll("input[type=radio]");
-    let radioActive;
-    for (let i = 0; i < radioOption.length; i++){
-        if(radioOption[i].checked){
-            radioActive = radioOption[i].value;
-        }
-    }
-    if(radioActive){
-        console.log(radioActive);
-    }else{
-        console.log("no option selected");
-    }
+    // let radioOption = document.querySelectorAll("input[type=radio]");
+    // let radioActive;
+    // for (let i = 0; i < radioOption.length; i++){
+    //     if(radioOption[i].checked){
+    //         radioActive = radioOption[i].value;
+    //     }
+    // }
+    // if(radioActive){
+    //     console.log(radioActive);
+    // }else{
+    //     console.log("no option selected");
+    // }
     // *******======radio value=======*******
 
     // =========*******checkbox********=========
-    let checkBoxOption = document.querySelectorAll("input[type=checkbox]");
-    let checkboxValue;
-    for (let i = 0; i < checkBoxOption.length; i++){
-        if (checkBoxOption[i].checked){
-            checkboxValue += " " + checkBoxOption[i].value;
-        }
-    }
-    if (checkboxValue){
-        console.log(checkboxValue);
-    }else{
-        console.log("nothing selected");
-    }
+    // let checkBoxOption = document.querySelectorAll("input[type=checkbox]");
+    // let checkboxValue;
+    // for (let i = 0; i < checkBoxOption.length; i++){
+    //     if (checkBoxOption[i].checked){
+    //         checkboxValue += " " + checkBoxOption[i].value;
+    //     }
+    // }
+    // if (checkboxValue){
+    //     console.log(checkboxValue);
+    // }else{
+    //     console.log("nothing selected");
+    // }
 
-    console.log(checkBoxOption);
+    // console.log(checkBoxOption);
     // =========*******checkbox********=========
     
     // *******======selectOption Value=======*******
-    console.log(iselectOption.value);
+    // console.log(iselectOption.value);
     // *******======selectOption Value=======*******
+    
+    // *******======Fall in love Value=======*******
+    console.log(idate.value);
+    // *******======Fall in love Value=======*******
 
 })
 getReset.addEventListener("click", function(){
